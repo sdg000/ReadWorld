@@ -1,3 +1,8 @@
+#ReadWorld Book Finder.
+My first Javascript/React Application.
+Allows users to search Google Book Database for fiction and non-fiction books.
+Built with Google Books API
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
