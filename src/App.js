@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Nav from './Nav';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import SearchBooks from './SearchBook';
 import Insights from './Insights';
 import Home from './Home';

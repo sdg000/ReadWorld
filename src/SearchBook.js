@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
 
 function SearchBooks({results, title}){
     const {items} = results

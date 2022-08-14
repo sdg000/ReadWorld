@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import React from "react";
+import {  Outlet, useNavigate } from "react-router-dom";
 
 function Nav({setResults, setTitle, title}){
     const navigate = useNavigate()
@@ -37,7 +37,7 @@ function Nav({setResults, setTitle, title}){
                     {/* <NavLink style={{textAlign: "right", color: "red"}} to="/insights">Insights</NavLink> */}
 
                     <h1 style={{cursor: "default"}}>Search for your favorite book </h1>
-                    <label><img src="https://cdn-icons.flaticon.com/png/128/3330/premium/3330314.png?token=exp=1660416680~hmac=43594f12b73843ee4d6ecc51b981383e" width="30" height="30"/></label>
+                    <label><img src="https://cdn-icons.flaticon.com/png/128/3330/premium/3330314.png?token=exp=1660416680~hmac=43594f12b73843ee4d6ecc51b981383e" width="30" height="30" alt="book image"/></label>
                     <label>
                         <input 
                         type="text" 
