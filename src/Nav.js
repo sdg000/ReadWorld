@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav.css"
-import {  Outlet, useNavigate } from "react-router-dom";
+import {  NavLink, Outlet, useNavigate } from "react-router-dom";
 
 function Nav({setResults, setTitle, title}){
     const navigate = useNavigate()
@@ -28,16 +28,16 @@ function Nav({setResults, setTitle, title}){
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
                     <div className="navbar-header">
-                        <a className="navbar-brand" href="/">ReadWorld</a>
+                        <a className="navbar-brand" href="/" style={{color: "dodgerblue"}}>ReadWorld</a>
                     </div>
                     <ul className="nav navbar-nav pull-right">
-                        <li><a href="/insights">Insight</a></li>
+                        <li><a href="/insights" style={{color: "dodgerblue"}}>Insight</a></li>
                     </ul>
                     
                 </div>
                 <div className="container-fluid">
                     {/* <h1 style={{cursor: "default"}}>Search for your favorite book </h1> */}
-                    <h1 className="col-lg-12" style={{textAlign: "center", cursor: "default"}}>Search for your favorite books!</h1>
+                    <h1 className="col-lg-12" style={{textAlign: "center", cursor: "default", color: "dodgerblue"}}>Search for your favorite books!</h1>
                 </div>
                 <form className="form-inline">
                     <input className="form-control"  

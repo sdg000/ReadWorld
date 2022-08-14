@@ -7,3 +7,23 @@
     
 }
 
+div{
+    background-color: rgb(201, 207, 223);
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+a{font-size: larger;}
+
+.container{
+    background-color:  rgba(62, 70, 90, 0.726);
+}
