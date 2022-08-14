@@ -1,0 +1,9 @@
+.form-inline{
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    
+}
+
