@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Nav from './Nav';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import SearchBooks from './SearchBook';
+import Insights from './Insights';
+import Home from './Home';
+import Book from './Book';
 
-function App() {
+export default function App() {
+  const [results, setResults] = useState([])
+  const [title, setTitle] = useState("")
+
+  // export const displayBook = (id) => (results.id === id)
+   
+
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav setResults={setResults} setTitle={setTitle} title={title}/>
+      <Routes>
+        <Route exact path='/' element={<Home/>}>
+
+        </Route>
+        <Route path='/searchbooks'  element={<SearchBooks results={results} title={title}/>}>
+          <Route path=':bookid' element={<Book results={results}/>}/>
+        </Route>
+
+        <Route path='/insights'  element={<Insights/>}/>
+
+      </Routes>
     </div>
   );
 }
 
-export default App;
+// export function displayBook(id){
+//   return res
+// }
+
+
+
+/**
+ * save {results} to state and pass {setResults} to <Home/>
+ * 
+ */
